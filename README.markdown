@@ -6,7 +6,7 @@ This is a [Redmine](http://www.redmine.org) plugin that adds a new macro to embe
 
 To embed a video you have to extract the video key from the Vimeo URL and provide it as input to the macro. For example the URL,
 
-http://vimeo.com/17095170
+[http://vimeo.com/17095170](http://vimeo.com/17095170)
 
 is the Vimeo link to the Kinect Titty Tracker video. The video key for this URL is **17095170**. Use this key in they vimeo macro as follows,
 

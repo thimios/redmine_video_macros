@@ -2,6 +2,8 @@
 
 This is a [Redmine](http://www.redmine.org) plugin that adds a new macro to embed [Vimeo](http://vimeo.com) videos into wiki pages.
 
+Version 0.0.1
+
 ## Usage
 
 To embed a video you have to extract the video key from the Vimeo URL and provide it as input to the macro. For example the URL,

@@ -10,15 +10,15 @@ This plugin was developed using J.W.Marsden's redmine-youtube plugin as a base.
 
 ## Usage
 
-To embed a video you have to extract the video key from the video service URL and provide it as input to the appropriate macro. For example, the Vimeo URL,
+To embed a video you have to extract the video key from the video service URL and provide it as input to the appropriate macro. For example, the Vimeo URL for the Kinect Titty Tracker video is
 
 [http://vimeo.com/17095170](http://vimeo.com/17095170)
 
-is the Vimeo link to the Kinect Titty Tracker video. The video key for this URL is **17095170**. Use this key in the macro as follows,
+The video key for this URL is **17095170**. Use this key in the macro as follows:
 
 `{{vimeo(17095170)}}`
 
-You can also size the video if you have a specific space to fill using,
+You can also specify the size of the embedded video:
 
 `{{vimeo(17095170, 800, 600)}}`
 
@@ -28,4 +28,4 @@ For Youtube, a given video link [http://www.youtube.com/watch?v=ctJJrBw7e-c](htt
 
 ## Developing
 
-Feel free to fork tis repo and add more video services. Look inside `init.rb` to see how the appropriate embed html is generated.
+Feel free to fork this repo and add more video services. Look inside `init.rb` to see how the appropriate embed html is generated.

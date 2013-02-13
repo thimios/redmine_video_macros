@@ -1,9 +1,9 @@
 require 'redmine'
 
 Redmine::Plugin.register :redmine_vimeo do
-	name 'Redmine Video wiki macro plugin'
+	name 'Redmine Video plugin'
 	author 'Dan Wilcox'
-	description 'Adds macros for Youtube and Vimeo to allow posting of video to wiki pages.'
+	description 'Adds wiki macros to embed Youtube & Vimeo videos.'
 	version '0.1.0'
 	url 'http://github.com/danomatika/redmine_vimeo'
 	author_url 'http://danomatika.com'
@@ -24,16 +24,7 @@ Redmine::Plugin.register :redmine_vimeo do
 					h = args[2]
 				end
 				out = <<"EOF"
-<object width="#{w}" height="#{h}">
-  <param name="movie" value="http://www.youtube.com/v/#{v}?rel=1&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowScriptAccess" value="always"></param>
-  <embed src="http://www.youtube.com/v/#{v}?rel=1&fs=1"
-    type="application/x-shockwave-flash"
-    allowscriptaccess="always"
-    width="#{w}" height="#{h}" 
-    allowfullscreen="true"></embed>
-</object>
+<iframe class="youtube-player" type="text/html" width="#{w}" height="#{h}" src="http://www.youtube.com/embed/#{v}" frameborder="0"></iframe>
 EOF
 			else
 				out = "<pre>Error in youtube macro. The correct usage is {{youtube(&lt;video key&gt;,[&lt;width&gt;,&lt;height&gt;])}}. \r\neg {{youtube(4N3N1MlvVc4)}} or {{youtube(4N3N1MlvVc4,800,600)}}</pre>"

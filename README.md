@@ -8,6 +8,11 @@ Supported Video Services:
 
 This plugin was developed using J.W.Marsden's redmine-youtube plugin as a base.
 
+## Version
+
+Redmine 1.x: 0.1.x
+Redmine 2.x: 0.2.x
+
 ## Usage
 
 To embed a video you have to extract the video key from the video service URL and provide it as input to the appropriate macro. For example, the Vimeo URL for the Kinect Titty Tracker video is

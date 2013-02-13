@@ -1,4 +1,4 @@
-# Redmine Video Macro Plugin
+# Redmine Video Macros plugin
 
 This is a [Redmine](http://www.redmine.org) plugin that adds a macros to embed videos into Redmine wiki pages.
 

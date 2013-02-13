@@ -1,9 +1,9 @@
 require 'redmine'
 
 Redmine::Plugin.register :redmine_vimeo do
-	name 'Redmine Video plugin'
+	name 'Redmine Video Macros plugin'
 	author 'Dan Wilcox'
-	description 'Adds wiki macros to embed Youtube & Vimeo videos.'
+	description 'Redmine wiki macros for embedding video'
 	version '0.1.0'
 	url 'http://github.com/danomatika/redmine_vimeo'
 	author_url 'http://danomatika.com'
